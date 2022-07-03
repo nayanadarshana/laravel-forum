@@ -62,3 +62,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Installation Steps
+- Set up composer libraries first:
+```
+composer install
+```
+- Migrate tables:
+```
+php artisan migrate
+```
+- Update record according to your requirement
+```
+php artisan db:seed
+```
+- Finally install Passport [*ignore if any error after running the command*]:
+````
+php artisan passport:install
+````
+
+-to run the project in local run
+
+````
+ php artisan serve
+````
+
